@@ -125,12 +125,7 @@ venv.bak/
 .idea/
 
 #vscode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+.vscode/
 
 # MacOS
 .DS_Store
