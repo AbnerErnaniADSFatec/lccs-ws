@@ -199,7 +199,7 @@ def get_classification_system(system_id_or_identifier, **kwargs):
 @oauth2(required=False)
 def classification_systems_classes(system_id_or_identifier, **kwargs):
     """Retrieve the classes of a classification system.
-    
+
     :param system_id_or_identifier: The id or identifier of a classification system
     """
     system_id, classes_list = data.get_classification_system_classes(system_id_or_identifier)
@@ -618,7 +618,7 @@ def create_delete_classes(system_id_or_identifier, **kwargs):
 @language()
 def edit_class(system_id_or_identifier, class_id_or_name, **kwargs):
     """Delete class of a specific classification system.
-    
+
     :param system_id_or_identifier: The id or identifier of a classification system
     :param class_id_or_name: The id or identifier of a class
     """
@@ -798,7 +798,7 @@ def edit_styles(system_id_or_identifier, style_format_id_or_name, **kwargs):
 @oauth2(roles = [['admin', 'creator']])
 def edit_style_formats(style_format_id_or_name, **kwargs):
     """Create or edit styles formats.
-    
+
     :param style_format_id_or_name: The id or name of a specific style format
     """
     if request.method == "POST":
